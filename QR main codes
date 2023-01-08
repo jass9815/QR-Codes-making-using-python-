@@ -1,0 +1,11 @@
+# To make QR code we need These Modules 
+import qrcode
+import matplotlib.pyplot as plt
+#in above code fill data which data you want in your QR code 
+
+data="https://www.instagram.com/_royal_rajput20/"
+
+filename="my_QRCode.png"
+image=qrcode.make(data)
+image.save(filename)
+plt.imshow(image,cmap="gray")
